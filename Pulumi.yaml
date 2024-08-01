@@ -1,11 +1,12 @@
 name: pulumi-random-project
-runtime:
-  name: python
-  options:
-    toolchain: pip
-    virtualenv: venv
-description: A minimal Random Python Pulumi program.
+runtime: yaml
+description: A minimal Random Pulumi YAML program.
 config:
   pulumi:tags:
     value:
-      pulumi:template: random-python
+      pulumi:template: random-yaml
+outputs:
+  name: ${username.id}
+resources:
+  username:
+    type: random:RandomPet
