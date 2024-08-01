@@ -10,3 +10,4 @@ outputs:
 resources:
   username:
     type: random:RandomPet
+    length: 3
