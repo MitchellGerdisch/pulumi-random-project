@@ -10,4 +10,5 @@ outputs:
 resources:
   username:
     type: random:RandomPet
-    length: 3
+    properties:
+      length: 3
